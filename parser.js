@@ -42,8 +42,9 @@ const characterCount = (text) =>{
     let trimmedText = text.replace(/\s/g, "");
 
     // then sort it alphabetically and remove the commas
-    trimmedText = trimmedText.split("").then((textJSON) => {textJSON.toLowerCase().sort().join().replace(/,/g, "")});
-
+    trimmedText = trimmedText.split("").join().replace(/,/g, "");
+    for(let val of trimmedText){val.toLowerCase();}
+    trimmedText = trimmedText.sort();
 
     //then, let's check for every entry is the given entry a character or not
     for(let i = 0; i < trimmedText.length; i++) {
