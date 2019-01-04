@@ -52,7 +52,7 @@ const characterCount = (text) =>{
             // before we do that, we should check if the word contains any other similiar characters and how many there are
             // if they exist.
             let x = recursiveCharCounter(trimmedText, i, 1);
-            let c = trimmedText.charAt(i);
+            let c = trimmedText.charAt(i).toLowerCase();
             arrayOfJSON.push({
                 [c]: x
             });
