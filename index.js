@@ -14,4 +14,4 @@ app.post('/analyze', (req, res) =>{
     //parser.textParser(text).then((responseJSON) => {res.json(responseJSON)});
     res.json(parser.textParser(text));
 });
-app.listen(2222 ,() => {console.log('server running on port 2222')});
+app.listen(process.env.PORT);
