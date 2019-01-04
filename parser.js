@@ -39,10 +39,10 @@ const characterCount = (text) =>{
     // then, it needs to create an array of objects, objects being char and amount of times and key and value
 
     // first, let's trim the text into one single string
-    let trimmedText = text.replace(/\s/g, "".toLowerCase());
+    let trimmedText = text.replace(/\s/g, "");
 
     // then sort it alphabetically and remove the commas
-    trimmedText = trimmedText.split("").sort().join().replace(/,/g, "");
+    trimmedText = trimmedText.split("").then((textJSON) => {textJSON.toLowerCase().sort().join().replace(/,/g, "")});
 
 
     //then, let's check for every entry is the given entry a character or not
