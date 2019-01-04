@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="22d4c012-87d0-4d9c-a1c5-02cdba8fc1a4" name="dreambroker" url="http://192.168.8.101">
+        <fileTransfer host="192.168.8.101" port="3000" rootFolder="/var/nodeprojects/dreambroker" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="3000" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
