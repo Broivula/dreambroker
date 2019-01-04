@@ -26,7 +26,8 @@ const textLength = (text) => {
 
 // function for word count, pretty straight forward.
 const wordCount = (text) =>{
-    return text.trim().split(' ').length;
+    if(text === ""){return 0}
+    else{ return text.trim().split(' ').length;}
 };
 
 
