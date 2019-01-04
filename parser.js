@@ -39,7 +39,7 @@ const characterCount = (text) =>{
     // then, it needs to create an array of objects, objects being char and amount of times and key and value
 
     // first, let's trim the text into one single string
-    let trimmedText = text.replace(/\s/g, "");
+    let trimmedText = text.replace(/\s/g, "".toLowerCase());
 
     // then sort it alphabetically and remove the commas
     trimmedText = trimmedText.split("").sort().join().replace(/,/g, "");
@@ -52,7 +52,7 @@ const characterCount = (text) =>{
             // before we do that, we should check if the word contains any other similiar characters and how many there are
             // if they exist.
             let x = recursiveCharCounter(trimmedText, i, 1);
-            let c = trimmedText.charAt(i).toLowerCase();
+            let c = trimmedText.charAt(i);
             arrayOfJSON.push({
                 [c]: x
             });
